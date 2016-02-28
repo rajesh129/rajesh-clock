@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+	<title>KRDS Clocks</title>
+	<link rel="shortcut icon" href="img/krds_clock.png" type="image/x-icon" >
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/moment-timezone-with-data.js"></script>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/jClocksGMT.css">
+	<link rel="stylesheet" href="style/jquery.timepicker.css">
+	</head>
+	<body class="">
+		<header>
+			<h1><!--LOGO--></h1>
+			<a href="#" class="reset" title="RESET">
+				<span><!-- RESET --></span>
+			</a>
+		</header>
+		<div class="mainWrapper">
+			<section>
+				<div id="cl_paris" data-id="fr" data-country="paris" data-offset="01:00" class="clock_container">
+					<h2>France</h2>
+					<div class="clockHolder">
+						<div class="rotatingWrapper hour"></div>
+						<div class="rotatingWrapper min"></div>
+						<div class="rotatingWrapper sec"></div>
+						<img class="clock" src="img/clock_face.png" />
+					</div> 
+					<div class="digital">
+						<span class="hr"></span> 
+						<span class="minute"></span> 
+						<span class="period"></span>
+						<div class="custom">
+							<select class="customTime">
+								<optgroup label="hh:mm">
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="day"></div>
+				</div>
+			</section>
+			<section>
+				<div id="cl_africa" data-id="sa" data-country="southafrica" data-offset="02:00" class="clock_container">
+					<h2>South Africa</h2>
+					<div class="clockHolder">
+						<div class="rotatingWrapper hour"></div>
+						<div class="rotatingWrapper min"></div>
+						<div class="rotatingWrapper sec"></div>
+						<img class="clock" src="img/clock_face.png" />
+					</div> 
+					<div class="digital">
+						<span class="hr"></span> 
+						<span class="minute"></span> 
+						<span class="period"></span>
+						<div class="custom">
+							<select class="customTime">
+								<optgroup label="hh:mm">
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="day"></div>
+				</div>
+			</section>		
+			<section>
+				<div id="cl_dubai" data-id="du" data-country="dubai" data-offset="04:00" class="clock_container">
+					<h2>Dubai</h2>
+					<div class="clockHolder">
+						<div class="rotatingWrapper hour"></div>
+						<div class="rotatingWrapper min"></div>
+						<div class="rotatingWrapper sec"></div>
+						<img class="clock" src="img/clock_face.png" />
+					</div> 
+					<div class="digital">
+						<span class="hr"></span> 
+						<span class="minute"></span> 
+						<span class="period"></span>
+						<div class="custom">
+							<select class="customTime">
+								<optgroup label="hh:mm">
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="day"></div>
+				</div>
+			</section>
+			<section>
+				<div id="cl_india" data-id="ind" data-country="india" data-offset="05:30" class="clock_container">
+					<h2>India</h2>
+					<div class="clockHolder">
+						<div class="rotatingWrapper hour"></div>
+						<div class="rotatingWrapper min"></div>
+						<div class="rotatingWrapper sec"></div>
+						<img class="clock" src="img/clock_face.png" />
+					</div> 
+					<div class="digital">
+						<span class="hr"></span> 
+						<span class="minute"></span> 
+						<span class="period"></span>
+						<div class="custom">
+							<select class="customTime">
+								<optgroup label="hh:mm">
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="day"></div>
+				</div>
+			</section>
+			<section>
+				<div id="cl_singapore" data-id="sg" data-country="singapore" data-offset="08:00" class="clock_container">
+					<h2>Singapore</h2>
+					<div class="clockHolder">
+						<div class="rotatingWrapper hour"></div>
+						<div class="rotatingWrapper min"></div>
+						<div class="rotatingWrapper sec"></div>
+						<img class="clock" src="img/clock_face.png" />
+					</div> 
+					<div class="digital">
+						<span class="hr"></span> 
+						<span class="minute"></span> 
+						<span class="period"></span>
+						<div class="custom">
+							<select class="customTime">
+								<optgroup label="hh:mm">
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="day"></div>
+				</div>
+			</section>			
+			<section>
+				<div id="cl_hongkong" data-id="hk" data-country="hongkong" data-offset="08:00" class="clock_container">
+					<h2>Hong Kong</h2>
+					<div class="clockHolder">
+						<div class="rotatingWrapper hour"></div>
+						<div class="rotatingWrapper min"></div>
+						<div class="rotatingWrapper sec"></div>
+						<img class="clock" src="img/clock_face.png" />
+					</div> 
+					<div class="digital">
+						<span class="hr"></span> 
+						<span class="minute"></span> 
+						<span class="period"></span>
+						<div class="custom">
+							<select class="customTime">
+								<optgroup label="hh:mm">
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="day"></div>
+				</div>
+			</section>
+			<section>
+				<div id="cl_shanghai" data-id="ch" data-country="shanghai" data-offset="08:00" class="clock_container">
+					<h2>Shanghai</h2>
+					<div class="clockHolder">
+						<div class="rotatingWrapper hour"></div>
+						<div class="rotatingWrapper min"></div>
+						<div class="rotatingWrapper sec"></div>
+						<img class="clock" src="img/clock_face.png" />
+					</div> 
+					<div class="digital">
+						<span class="hr"></span> 
+						<span class="minute"></span> 
+						<span class="period"></span>
+						<div class="custom">
+							<select class="customTime">
+								<optgroup label="hh:mm">
+									<option value="00:00">00:00</option>
+									<option value="00:30">00:30</option>
+									<option value="01:00">01:00</option>
+									<option value="01:30">01:30</option>
+									<option value="02:00">02:00</option>
+									<option value="02:30">02:30</option>
+									<option value="03:00">03:00</option>
+									<option value="03:30">03:30</option>
+									<option value="04:00">04:00</option>
+									<option value="04:30">04:30</option>
+									<option value="05:00">05:00</option>
+									<option value="05:30">05:30</option>
+									<option value="06:00">06:00</option>
+									<option value="06:30">06:30</option>
+									<option value="07:00">07:00</option>
+									<option value="07:30">07:30</option>
+									<option value="08:00">08:00</option>
+									<option value="08:30">08:30</option>
+									<option value="09:00">09:00</option>
+									<option value="09:30">09:30</option>
+									<option value="10:00">10:00</option>
+									<option value="10:30">10:30</option>
+									<option value="11:00">11:00</option>
+									<option value="11:30">11:30</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="14:30">14:30</option>
+									<option value="15:00">15:00</option>
+									<option value="15:30">15:30</option>
+									<option value="16:00">16:00</option>
+									<option value="16:30">16:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
+									<option value="22:00">22:00</option>
+									<option value="22:30">22:30</option>
+									<option value="23:00">23:00</option>
+									<option value="23:30">23:30</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<div class="day"></div>
+				</div>
+			</section>
+		</div>
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				
+			//	$('.customTime').timepicker({ 'timeFormat': 'H:i:s' });
+				
+				function setTime(time) {
+					var country_offset	=	{
+						_fr		:	60,
+						_sa		:	120,
+						_du		:	240,
+						_in		:	330,
+						_sg		:	480,
+						_hk		:	480,
+						_ch		:	480
+					};
+					var converted_time		=	{
+						fr	:	moment(time).utcOffset(country_offset._fr).format(),
+						sa	:	moment(time).utcOffset(country_offset._sa).format(),
+						du	:	moment(time).utcOffset(country_offset._du).format(),
+						ind	:	moment(time).utcOffset(country_offset._in).format(),
+						sg	:	moment(time).utcOffset(country_offset._sg).format(),
+						hk	:	moment(time).utcOffset(country_offset._hk).format(),
+						ch	:	moment(time).utcOffset(country_offset._ch).format()
+					};
+					var only_time		=	{
+						fr	:	converted_time.fr.split("+"),
+						sa	:	converted_time.sa.split("+"),
+						du	:	converted_time.du.split("+"),
+						ind	:	converted_time.ind.split("+"),
+						sg	:	converted_time.sg.split("+"),
+						hk	:	converted_time.hk.split("+"),
+						ch	:	converted_time.ch.split("+")
+					};
+					var time_extract	=	{
+						fr	:	moment(only_time.fr[0]).format("HH:mm").split(":"),
+						sa	:	moment(only_time.sa[0]).format("HH:mm").split(":"),
+						du	:	moment(only_time.du[0]).format("HH:mm").split(":"),
+						ind	:	moment(only_time.ind[0]).format("HH:mm").split(":"),
+						sg	:	moment(only_time.sg[0]).format("HH:mm").split(":"),
+						hk	:	moment(only_time.hk[0]).format("HH:mm").split(":"),
+						ch	:	moment(only_time.ch[0]).format("HH:mm").split(":")
+					};
+
+					var date 			=	{
+						fr 	: 	moment(converted_time.fr).utcOffset(country_offset._fr).format("YYYY-MM-DD"),
+						sa 	: 	moment(converted_time.sa).utcOffset(country_offset._sa).format("YYYY-MM-DD"),
+						du 	: 	moment(converted_time.du).utcOffset(country_offset._du).format("YYYY-MM-DD"),
+						ind : 	moment(converted_time.ind).utcOffset(country_offset._in).format("YYYY-MM-DD"),
+						sg 	: 	moment(converted_time.sg).utcOffset(country_offset._sg).format("YYYY-MM-DD"),
+						hk 	: 	moment(converted_time.hk).utcOffset(country_offset._hk).format("YYYY-MM-DD"),
+						ch 	: 	moment(converted_time.ch).utcOffset(country_offset._ch).format("YYYY-MM-DD")
+					};
+					var converted_date		= 		{
+						fr 	: 	moment(date.fr).format("dddd"),
+						sa 	: 	moment(date.sa).format("dddd"),
+						du 	: 	moment(date.du).format("dddd"),
+						ind	: 	moment(date.ind).format("dddd"),
+						sg 	: 	moment(date.sg).format("dddd"),
+						hk 	: 	moment(date.hk).format("dddd"),
+						ch 	: 	moment(date.ch).format("dddd")
+					};
+
+					
+					
+				//	console.log(converted_time);
+				//	console.log(only_time);
+				//	console.log(time_extract);
+					
+					$('#cl_paris .hr').text(time_extract.fr[0]);
+					$('#cl_paris .minute').text(time_extract.fr[1]);
+					
+					$('#cl_africa .hr').text(time_extract.sa[0]);
+					$('#cl_africa .minute').text(time_extract.sa[1]);
+					
+					$('#cl_dubai .hr').text(time_extract.du[0]);
+					$('#cl_dubai .minute').text(time_extract.du[1]);
+					
+					$('#cl_india .hr').text(time_extract.ind[0]);
+					$('#cl_india .minute').text(time_extract.ind[1]);
+					
+					$('#cl_singapore .hr').text(time_extract.sg[0]);
+					$('#cl_singapore .minute').text(time_extract.sg[1]);
+					
+					$('#cl_hongkong .hr').text(time_extract.hk[0]);
+					$('#cl_hongkong .minute').text(time_extract.hk[1]);
+					
+					$('#cl_shanghai .hr').text(time_extract.ch[0]);
+					$('#cl_shanghai .minute').text(time_extract.ch[1]);
+
+
+					$('#cl_paris .day').text(converted_date.fr);
+					
+					$('#cl_africa .day').text(converted_date.sa);
+					
+					$('#cl_dubai .day').text(converted_date.du);
+					
+					$('#cl_india .day').text(converted_date.ind);
+					
+					$('#cl_singapore .day').text(converted_date.sg);
+					
+					$('#cl_hongkong .day').text(converted_date.hk);
+					
+					$('#cl_shanghai .day').text(converted_date.ch);
+					
+					var hr_multiple	= 360/12;
+					var min_mulitple = 360/60;
+
+					/*** Create Clock **/
+					function create_clock(country){
+
+						/*** Hour Manipulation ***/
+						var hr_conv = parseInt(time_extract[country][0]);
+						if(hr_conv > 12)
+						{
+							hr_conv = hr_conv - 12;
+						}
+						hr_conv = hr_conv * hr_multiple;
+					//	console.log(hr_conv);
+
+						/*** Minute Manipulation ***/
+						var min_conv = parseInt(time_extract[country][1]) * min_mulitple;
+					//	console.log(min_conv);
+
+						$('.clock_container[data-id="' + country + '"] .hour').css('transform','rotate(' + hr_conv + 'deg)');
+						$('.clock_container[data-id="' + country + '"] .min').css('transform','rotate(' + min_conv + 'deg)');
+						
+						$('.clock_container .hour').css('transition','all 0.4s ease-out');
+						$('.clock_container .min').css('transition','all 0.2s ease-out');
+					}
+					
+					create_clock("fr");
+					create_clock("sa");
+					create_clock("du");
+					create_clock("ind");
+					create_clock("sg");
+					create_clock("hk");
+					create_clock("ch");
+				}
+				
+			//	setTime(current_time);
+			var timer =	setInterval(function(){
+							var current_time = moment().format();
+							setTime(current_time);
+						},100);
+			var resetTimer;
+		
+				$('.customTime').on('change',function(){
+					
+					clearInterval(timer);
+					clearInterval(resetTimer);
+					
+					$('.reset').css('display','inline-block').addClass('animate');
+					
+					var timeEntered = $(this).val(),
+						moment_time = moment().format(),
+						split1 = moment_time.split("T"),
+						timeZone = $(this).parents(".clock_container").data("offset"),
+						new_time = split1[0] + "T" + timeEntered + "+" + timeZone;
+				//	console.log(new_time);
+					setTime(new_time);	
+					$(".customTime:not(this)").val('');
+					$(this).val(timeEntered);
+				});
+				
+				$('.reset').click(function(e){
+					e.preventDefault();
+					
+					$(this).hide().removeClass('animate');
+					
+					$('.customTime').val('');
+					
+					resetTimer =	setInterval(function(){
+						var current_time = moment().format();
+						setTime(current_time);
+					},100);
+				});
+				
+			});
+		</script>
+		<!--<script type="text/javascript" src="http://timeapi.org/utc/now.json?callback=setTime"></script>-->
+	</body>
+</html>
